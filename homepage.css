@@ -1,0 +1,151 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global settings */
+body {
+  font-family: Serif;
+}
+  /* Display saved contacts */
+  .contacts-list {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .contacts-list ul {
+    list-style-type: none;
+  }
+
+  .contacts-list li {
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 11px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  text-decoration:underline;
+}
+
+/* Parallax Sections */
+.parallax {
+  color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-text{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.parallax h1, .parallax p,.parallax img{
+  margin: 0;
+}
+.parallax img{
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 5px;
+  max-width: 750px;
+  max-height: 400px;
+}
+/* Section Styling */
+.section {
+  padding: 15px 10px;
+  height: 100vh;
+  background-color: #441a1a;
+  color: #000000;
+}
+#tipsandprecaution{
+  text-align: left;
+  justify-content: left;
+  margin-left: 5vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#tipsandprecaution h2{
+  text-align: left;
+  justify-content: left;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#tipsandprecaution p{
+  text-align: left;
+  justify-content: left;
+  font-family: Serif;  
+  font-size: 1.3rem;
+}
+#mindrelaxingexercises{
+  text-align: center;
+  justify-content: center;
+}
+input[type="text"]{
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+}
+
+button {
+width:fit-content;
+padding: 12px;
+background-color: black;
+color: white;
+border: none;
+border-radius: 4px;
+font-size: 17px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #ad0000;
+}
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}

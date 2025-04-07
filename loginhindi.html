@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>लॉगिन | महिला सुरक्षा प्रबंधन</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>WSM में लॉगिन करें</h2>
+    <form id="loginForm">
+      <label for="username">नाम</label>
+      <input type="text" id="username" name="username" placeholder="अपना पूरा नाम दर्ज करें" required>
+      <label for="age">जन्म तिथि</label>
+      <input type="date" id="age" name="age" placeholder="अपनी असली जन्म तिथि दर्ज करें" required>
+      <label for="password">पासवर्ड</label>
+      <input type="password" id="password" name="password" placeholder="अपना पासवर्ड दर्ज करें" required>
+  
+      <button type="submit">लॉगिन</button>
+    </form>
+    <p id="errorMessage" class="error-message"></p>
+  </div>
+  <script src="loginhindi.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* General styling for the welcome page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg,#ffffff, #f8b0da, #ad0000,#f8b0da, #ffffff);
+    background-size: 300% 300%;
+    animation: glowingFlow 3s ease-in-out infinite;
+  }
+  
+  @keyframes glowingFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .welcome-container {
+    font-family:serif;
+    font-weight: bolder;
+    color:black;
+    text-align: center;
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+  /* Animation to fade in the welcome message */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+ 
+  
