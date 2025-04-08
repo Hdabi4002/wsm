@@ -16,19 +16,19 @@ body {
 
 .language-selection-container {
     text-align: center;
-    border:solid #ad0000 2px;
-    background-color: white;
+    background-color: #fff;
     padding: 35px;
-    border-radius: 4px;
+    border:solid #ad0000 2px;
+    border-radius: 8px;
     box-shadow: 7px 7px 7px 7px  #fce3f1;
-    width:250px;
-    height: fit-content;
     align-items: center;
     justify-content: center;
+    
 }
 @media only screen and (max-width: 480px){
     .language-selection-container{
-      width: 150px;
+      width: 190px;
+      padding: 20px;
       height: fit-content;
       margin: 3%;
     }
