@@ -13,7 +13,6 @@ body {
   }
 
   .login-container {
-    
     border:solid #ad0000 2px;
     background-color: white;
     padding: 35px;
@@ -22,6 +21,11 @@ body {
     width: 250px;
     align-items: center;
     justify-content: center;
+  }
+@media only screen and (max-width: 480px){
+    .welcome-container{
+      width: 150px;
+    }
   }
 
   h2{
