@@ -1,15 +1,16 @@
 /* General styling for the welcome page */
 body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
   }
 
-  body {
-    margin: 0;
+  body{
     height: 100vh;
+    margin: 0;
     background: linear-gradient(45deg,#ffffff, #f8b0da, #ad0000,#f8b0da, #ffffff);
     background-size: 300% 300%;
     animation: glowingFlow 3s ease-in-out infinite;
@@ -34,11 +35,12 @@ body {
   }
   
   .welcome-container {
+    flex-basis: auto;
     font-family:serif;
     font-weight: bolder;
     color:black;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     opacity: 0;
     animation: fadeIn 3s forwards;
   }
