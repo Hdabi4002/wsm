@@ -1,151 +1,223 @@
-/* Reset some default styles */
+/* ===== Reset & Base Styles ===== */
 * {
   margin: 0;
   padding: 0;
-  background-size: 100% 100%;
+  box-sizing: border-box;
 }
 
-/* Body and global settings */
-body {
-  font-family: Serif;
+html, body {
+  width: 100%;
+  font-family: 'Serif', Georgia, serif;
+  scroll-behavior: smooth;
+  color: #000;
+  background-color: #fff;
+  overflow-x: hidden;
 }
-  /* Display saved contacts */
-  .contacts-list {
-    margin-top: 20px;
-    text-align: left;
-  }
 
-  .contacts-list ul {
-    list-style-type: none;
-  }
-
-  .contacts-list li {
-    background-color: #444;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-
-/* Navbar Styling */
+/* ===== Navbar ===== */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 100;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .navbar a {
   color: white;
-  margin: 0 11px;
   text-decoration: none;
-  font-size: 1.2rem;
+  margin: 10px 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-/* Parallax Sections */
-.parallax {
-  color: black;
-  height: 100vh;
+/* ===== Section Styles ===== */
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 20px 40px; /* Increased top padding to account for fixed navbar */
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.parallax-text{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+/* ===== Parallax Section Text ===== */
+.parallax-text {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+.parallax-text img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* ===== Tips & Precautions Section ===== */
+#tipsandprecaution {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#tipsandprecaution h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#tipsandprecaution p {
   font-size: 1.1rem;
 }
 
-.parallax h1, .parallax p,.parallax img{
-  margin: 0;
-}
-.parallax img{
-  justify-content:center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  margin-top: 5px;
-  max-width: 750px;
-  max-height: 400px;
-}
-/* Section Styling */
-.section {
-  padding: 15px 10px;
-  height: 100vh;
-  background-color: #441a1a;
-  color: #000000;
-}
-#tipsandprecaution{
-  text-align: left;
-  justify-content: left;
-  margin-left: 5vh;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size:contain;
-}
-h2 {
-  margin-bottom: 20px;
+#tipsandprecaution img {
+  vertical-align: middle;
+  margin-right: 8px;
+  height: 20px;
 }
 
-p {
-  font-size: 1.2rem;
+/* ===== Mind Relaxing Video Section ===== */
+#mindrelaxingexercises {
+  background-color: white;
+  color: #000;
 }
 
-#tipsandprecaution h2{
-  text-align: left;
-  justify-content: left;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 20px;
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 20px;
 }
 
-#tipsandprecaution p{
-  text-align: left;
-  justify-content: left;
-  font-family: Serif;  
-  font-size: 1.3rem;
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-#mindrelaxingexercises{
-  text-align: center;
-  justify-content: center;
+
+/* ===== SOS Alert Input & Buttons ===== */
+#sosalert input[type="text"],
+#sosalert button {
+  width: 90%;
+  max-width: 500px;
+  margin: 10px auto;
+  display: block;
 }
-input[type="text"]{
-width: 100%;
-padding: 10px;
-margin: 8px 0;
-border: 1px solid #ccc;
-border-radius: 4px;
-font-size: 16px;
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
-width:fit-content;
-padding: 12px;
-background-color: black;
-color: white;
-border: none;
-border-radius: 4px;
-font-size: 17px;
-cursor: pointer;
+  padding: 12px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-background-color: #ad0000;
+  background-color: #ad0000;
 }
-/* Footer Styling */
+
+/* ===== Contacts List Display ===== */
+.contacts-list {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contacts-list li {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+/* ===== Footer ===== */
 footer {
   background-color: #222;
   color: white;
   text-align: center;
   padding: 20px 0;
-  position: relative;
+  margin-top: 40px;
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar a {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+
+  section {
+    padding-top: 140px; /* Additional padding for smaller screens */
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  #tipsandprecaution {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax h2 {
+    font-size: 1.5rem;
+  }
+
+  .parallax p {
+    font-size: 1rem;
+  }
+
+  .navbar a {
+    font-size: 0.95rem;
+  }
+
+  input[type="text"], button {
+    width: 95%;
+  }
+
+  /* Ensure logo is also larger on small screens */
+  #home .parallax-text img.first-section-logo {
+    max-width: 300px;
+  }
 }
