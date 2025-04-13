@@ -20,7 +20,7 @@ html, body {
   top: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.85);
-  padding: 12px 20px;
+  padding: 12px 18px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,8 +35,8 @@ html, body {
   transition: color 0.3s;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+.navbar a:hover{
+  text-decoration:underline;
 }
 
 /* ===== Section Styles ===== */
@@ -68,9 +68,11 @@ section {
 
 /* ===== Tips & Precautions Section ===== */
 #tipsandprecaution {
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 50px 0; 
+  text-align: center;
 }
 
 #tipsandprecaution h2 {
@@ -110,19 +112,40 @@ section {
   width: 100%;
   height: 100%;
 }
-
+#sosalert{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 60px 0; 
+    text-align: center;
+}
 /* ===== SOS Alert Input & Buttons ===== */
 #sosalert input[type="text"],
 #sosalert button {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
-  margin: 10px auto;
+  margin: 13px auto;
   display: block;
 }
 
+#reportincident{
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 60px 0; 
+  text-align: center;
+}
+/* ===== SOS Alert Input & Buttons ===== */
+#reportincident input[type="text"],
+#reportincident button {
+width: 100%;
+max-width: 500px;
+margin: 13px auto;
+display: block;
+}
 input[type="text"] {
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -176,13 +199,16 @@ footer {
 /* ===== Responsive Breakpoints ===== */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two equal-width columns */
+    gap: 2px; /* Spacing between grid items */
+    padding: 5px;
   }
 
   .navbar a {
-    margin: 8px 0;
+    margin: 3px 0;
     font-size: 1rem;
+    text-align: left;
   }
 
   section {
@@ -221,15 +247,23 @@ footer {
     max-width: 300px;
   }
 }
+
 /* ===== Landscape Orientation Adjustment ===== */
 @media (orientation: landscape) {
   .navbar {
     height: 60px; /* Reduced height for landscape to make more room for content */
-    padding: 8px 16px;
+    padding: 5px 8px;
+    flex-wrap: wrap;
+    overflow-x: auto; /* Enables horizontal scrolling if too many items */
+    overflow-y: auto;/* Enables vertical scrolling if too many items */
+    white-space: nowrap; /* Prevent wrapping by default */
+  }
+  .navbar a {
+    margin: 4px 8px;
+    font-size: 1rem;
   }
 
   section {
-    padding-top: 100px; /* Reduce padding to fit content */
+    padding-top:100px; /* Reduce padding to fit content */
   }
-}
-   
+} 
