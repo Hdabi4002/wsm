@@ -13,8 +13,8 @@
       <a href="#tipsandprecaution">सुझाव और सावधानियाँ</a>
       <a href="#emergencysiren" id="emergencyTab">आपातकालीन सायरन</a>
       <a href="#sosalert">एसओएस अलर्ट</a>
-      <a href="#mindrelaxingexercises">मानसिक शांति के अभ्यास</a>
-      <a href="#reportincident">घटना रिपोर्ट</a>
+      <a href="#mindrelaxingexercises">मन को शांत करने वाले व्यायाम</a>
+      <a href="#reportincident">घटना रिपोर्ट करें</a>
     </div>
   </header>
 
@@ -23,41 +23,45 @@
   <section id="home" class="parallax" style="background-color: #f8b0da;background-position: center;background-size: cover;background-attachment: fixed;">
     <div class="parallax-text">
       <img src="LOGO.png"/>
-      <p>हम महिलाओं की सुरक्षा सुनिश्चित करने के लिए विभिन्न सेवाएँ प्रदान करते हैं।</p>
+      <p style="font-weight: bold;font-size: 1.1rem;">यह वेबसाइट महिलाओं की सुरक्षा सुनिश्चित करने और उनकी सुरक्षा के लिए विभिन्न सेवाएं प्रदान करती है।</p>
     </div>
   </section>
 
-  <section id="tipsandprecaution" class="parallax" >
+  <section id="tipsandprecaution" class="parallax">
     <div class="parallax-text" style="max-width: 600px;">
-      <img src="savewom.png" style="width: 320px; height: 220px; margin: 0px auto 3px auto;" />
-      <h2>सुझाव और सावधानियाँ</h2>
-      <p style="font-weight: bold;">सुरक्षित रहने के लिए निम्नलिखित सुझावों और सावधानियों का पालन करें:</p>
+      <img src="savewom.png" style="width: 320px; height: 220px; margin: 0px auto 3px auto; justify-content: center;display: flex;align-items: center;" />
+      <h2 style="justify-content: center;display: flex;align-items: center;">सुझाव और सावधानियाँ</h2>
+      <p style="font-weight: bold; font-size: 1.3rem;">स्वयं को सुरक्षित रखने के लिए नीचे दिए गए सुझावों और सावधानियों का पालन करें:</p><br/>
       <p style="text-align: left;">
-        <img src="bulleticon.png"/> अपने आसपास के वातावरण के प्रति सतर्क रहें।<br>
-        <img src="bulleticon.png"/> सार्वजनिक स्थानों पर हेडफोन या ईयरबड्स का उपयोग न करें।<br>
-        <img src="bulleticon.png"/> रोशनी वाले और भीड़-भाड़ वाले मार्गों का ही चयन करें।<br>
+        <img src="bulleticon.png"/> अपने आस-पास के वातावरण के प्रति सतर्क रहें।<br>
+        <img src="bulleticon.png"/> सार्वजनिक स्थानों पर हेडफोन या ईयरबड का उपयोग न करें।<br>
+        <img src="bulleticon.png"/> अच्छी रोशनी और भीड़-भाड़ वाले रास्तों का उपयोग करें।<br>
         <img src="bulleticon.png"/> अपनी व्यक्तिगत जानकारी साझा करने में सावधानी बरतें।<br>
-        <img src="bulleticon.png"/> मिर्च स्प्रे या छोटा चाकू जैसे सुरक्षा उपकरण अपने पास रखें।<br>
-        <img src="bulleticon.png"/> अपने फोन को पूरी तरह से चार्ज रखें और आसानी से पहुँच योग्य बनाएं।<br>
-        <img src="bulleticon.png"/> रात को अकेले चलने या यात्रा करने से बचें।<br>
+        <img src="bulleticon.png"/> मिर्च स्प्रे, छोटा चाकू जैसे सुरक्षा उपकरण अपने पास रखें।<br>
+        <img src="bulleticon.png"/> अपने फोन को पूरी तरह चार्ज और सुलभ रखें।<br>
+        <img src="bulleticon.png"/> रात में अकेले चलने या यात्रा करने से बचें।<br>
       </p>
     </div>
   </section>
 
   <section id="sosalert" class="parallax" style="background-color: #f8b0da;background-position: center;background-size: cover;background-attachment: fixed;">
     <div class="parallax-text">
-      <img src="alertmsg.png" style="width: 200px; height: 150px; margin: 0px auto 3px auto;" />
+      <img src="alertmsg.png" style="width: 190px; height: 140px; margin: 0px auto 3px auto;" />
       <h2>अलर्ट भेजें</h2><br/>
       <p id="headline" style="font-size: 1.2rem;">अपने आपातकालीन संपर्क दर्ज करें:</p>
 
+      <!-- Contact Input Fields -->
       <div id="contactFields">
-        <input type="text" class="contact-input" id="contactsInput" style="width: 100%;" placeholder="संपर्क को अल्पविराम से अलग करें,">
+        <input type="text" class="contact-input" id="contactsInput" style="width: 100%;" placeholder="संपर्क नंबर कॉमा से अलग कर के दर्ज करें">
       </div>
 
+      <!-- Add More Contact Button -->
       <button id="addContactBtn">संपर्क जोड़ें</button>
 
+      <!-- Send Alert Button -->
       <button id="sendAlertBtn">अलर्ट भेजें</button>
 
+      <!-- Display Added Contacts -->
       <div class="contacts-list" id="contactsList">
         <h3>जोड़े गए संपर्क:</h3>
         <ul id="contactListUl">
@@ -70,8 +74,8 @@
   <section id="mindrelaxingexercises" class="parallax" style="background-color: white; background-position: center; background-size: cover; background-attachment: fixed; display: flex; justify-content: center; align-items: center; padding: 60px 0;">
     <div class="parallax-text" style="text-align: center;">
       <img src="powerwom.png" style="width: 180px; height: 140px; margin: 0 auto 20px auto; display: block;" />
-      <h2 style="margin: 10px 0;">मानसिक शांति के अभ्यास</h2>
-      <p style="margin-bottom: 20px;">तनावपूर्ण परिस्थितियों में अपने मन को शांत करने के लिए अभ्यास करें।</p>
+      <h2 style="margin: 10px 0;">मन को शांत करने वाले व्यायाम</h2>
+      <p style="margin-bottom: 20px;">तनावपूर्ण स्थितियों में अपने मन को शांत करने के लिए व्यायाम खोजें।</p>
       <div class="video-container" style="display: flex; justify-content: center;">
         <video controls width="560" height="315">
           <source src="mindrelaxing.mp4" type="video/mp4">
@@ -83,21 +87,22 @@
   <section id="reportincident" class="parallax" style="background-color: #f8b0da;background-position: center;background-size: cover;background-attachment: fixed;">
     <div class="parallax-text">
       <img src="reportmail.png" style="width: 240px; height: 190px; margin: 0px auto 3px auto;" />
-      <h2>घटना रिपोर्ट भेजें</h2><br/>
+      <h2>घटना रिपोर्ट करें</h2><br/>
 
+      <!-- Input Field -->
       <div id="writereport">
         <input type="text" class="report-input" id="reportInput" placeholder="घटना का विवरण यहां दर्ज करें...">
       </div>
 
+      <!-- Send Mail Button -->
       <button id="sendMailBtn">ईमेल भेजें</button>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 डब्लूएसएम | महिला सुरक्षा प्रबंधन | सर्वाधिकार सुरक्षित | डिज़ाइन और विकास: हबीबह क़मर</p>
+    <p>&copy; 2025 डब्ल्यूएसएम | महिला सुरक्षा प्रबंधन | सर्वाधिकार सुरक्षित | डिज़ाइन और विकास: हबीबह क़मर</p>
   </footer>
 
   <script src="homepage.js"></script>
-  
 </body>
 </html>
