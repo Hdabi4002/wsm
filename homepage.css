@@ -25,6 +25,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   z-index: 1000;
+  height: auto; /* Allow navbar to grow or shrink dynamically */
 }
 
 .navbar a {
@@ -178,6 +179,7 @@ footer {
   .navbar {
     flex-direction: column;
     padding: 10px;
+    height: auto; /* Ensures it adjusts to screen size */
   }
 
   .navbar a {
@@ -219,5 +221,29 @@ footer {
   /* Ensure logo is also larger on small screens */
   #home .parallax-text img.first-section-logo {
     max-width: 300px;
+  }
+}
+
+/* ===== Landscape Orientation Adjustment ===== */
+@media (orientation: landscape) {
+  .navbar {
+    height: 60px; /* Reduced height for landscape to make more room for content */
+    padding: 8px 16px;
+  }
+
+  section {
+    padding-top: 100px; /* Reduce padding to fit content */
+  }
+}
+
+/* ===== Portrait Orientation Adjustment ===== */
+@media (orientation: portrait) {
+  .navbar {
+    height: 80px; /* Taller navbar in portrait mode */
+    padding: 12px 20px;
+  }
+
+  section {
+    padding-top: 120px; /* Increased padding for fixed navbar in portrait mode */
   }
 }
