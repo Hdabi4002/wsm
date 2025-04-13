@@ -11,9 +11,10 @@
     <div class="navbar">
       <a href="#home">Home</a>
       <a href="#tipsandprecaution">Tips & Precautions</a>
-      <a href="#sosalert">SOS Alert</a>
       <a href="#emergencysiren" id="emergencyTab">Emergency Siren</a>
+      <a href="#sosalert">SOS Alert</a>
       <a href="#mindrelaxingexercises">Mind-Relaxing Exercises</a>
+      <a href="#reportincident">Incident Report</a>
     </div>
   </header>
 
@@ -26,29 +27,33 @@
     </div>
   </section>
 
-  <section id="tipsandprecaution" class="parallax">
-    <div class="parallax-text">
-        <img src="savewom.png"/>
-        <h2>TIPS AND PRECAUTIONS</h2>
-        <p style="font-weight: bold;">Follow below tips & precautions to safe yourself:</p>
-        <p><img src="bulleticon.png"/> Stay aware of your surroundings.</br>
-          <img src="bulleticon.png"/> Avoid using headphones or earbuds in public.</br>
-          <img src="bulleticon.png"/> Use well-lit and populated routes.</br>
-          <img src="bulleticon.png"/> Be cautious about sharing your personal information.</br>
-          <img src="bulleticon.png"/> Carry some safety tools such as pepper spray, small knife.</br>
-          <img src="bulleticon.png"/> Keep your phone fully charged and accessible.</br>
-          <img src="bulleticon.png"/> Avoid walking or travelling alone at night.</br></p>
+  <section id="tipsandprecaution" class="parallax" >
+    <div class="parallax-text" style="max-width: 600px;">
+      <img src="savewom.png" style="width: 320px; height: 220px; margin: 0px auto 3px auto;" />
+      <h2>TIPS AND PRECAUTIONS</h2>
+      <p style="font-weight: bold;">Follow below tips & precautions to safe yourself:</p>
+      <p style="text-align: left;">
+        <img src="bulleticon.png"/> Stay aware of your surroundings.<br>
+        <img src="bulleticon.png"/> Avoid using headphones or earbuds in public.<br>
+        <img src="bulleticon.png"/> Use well-lit and populated routes.<br>
+        <img src="bulleticon.png"/> Be cautious about sharing your personal information.<br>
+        <img src="bulleticon.png"/> Carry some safety tools such as pepper spray, small knife.<br>
+        <img src="bulleticon.png"/> Keep your phone fully charged and accessible.<br>
+        <img src="bulleticon.png"/> Avoid walking or travelling alone at night.<br>
+      </p>
     </div>
   </section>
+  
 
   <section id="sosalert" class="parallax" style="background-color: #f8b0da;background-position: center;background-size: cover;background-attachment: fixed;">
     <div class="parallax-text">
+      <img src="alertmsg.png" style="width: 200px; height: 150px; margin: 0px auto 3px auto;" />
       <h2>SEND ALERT</h2><br/>
-      <p id="headline">Enter Your Emergency Contacts:</p>
+      <p id="headline" style="font-size: 1.2rem;">Enter Your Emergency Contacts:</p>
   
       <!-- Contact Input Fields -->
       <div id="contactFields">
-        <input type="text" class="contact-input" id="contactsInput" placeholder="Enter Contacts separated by commas (e.g., 1234567890, 0987654321)">
+        <input type="text" class="contact-input" id="contactsInput" style="width: 100%;" placeholder="Enter contacts separated by commas,">
       </div>
   
       <!-- Add More Contact Button -->
@@ -67,16 +72,33 @@
     </div>
   </section>
 
-  <section id="mindrelaxingexercises" class="parallax" style="background-color: white;background-position: center;background-size: cover;background-attachment: fixed;">
-    <div class="parallax-text">
-          <img src="powerwom.png"/>
-          <h2>MIND RELAXING EXERCISES</h2><br/>
-          <p>Explore relaxing exercises to calm your mind in stressful situations.</p>
-      <div class="video-container">
+  <section id="mindrelaxingexercises" class="parallax" style="background-color: white; background-position: center; background-size: cover; background-attachment: fixed; display: flex; justify-content: center; align-items: center; padding: 60px 0;">
+    <div class="parallax-text" style="text-align: center;">
+      <img src="powerwom.png" style="width: 180px; height: 140px; margin: 0 auto 20px auto; display: block;" />
+      <h2 style="margin: 10px 0;">MIND RELAXING EXERCISES</h2>
+      <p style="margin-bottom: 20px;">Explore relaxing exercises to calm your mind in stressful situations.</p>
+      <div class="video-container" style="display: flex; justify-content: center;">
         <video controls width="560" height="315">
           <source src="mindrelaxing.mp4" type="video/mp4">
         </video>
       </div>
+    </div>
+  </section>
+  
+
+  <section id="reportincident" class="parallax" style="background-color: #f8b0da;background-position: center;background-size: cover;background-attachment: fixed;">
+    <div class="parallax-text">
+      <img src="reportmail.png" style="width: 240px; height: 190px; margin: 0px auto 3px auto;" />
+      <h2>SEND INCIDENT REPORT</h2><br/>
+  
+      <!-- Input Field -->
+      <div id="writereport">
+        <input type="text" class="report-input" id="reportInput" placeholder="Enter the details of the incident here...">
+      </div>
+  
+      <!-- Send Mail Button -->
+      <button id="sendMailBtn">Send Email</button>
+      
     </div>
   </section>
 
