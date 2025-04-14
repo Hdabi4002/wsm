@@ -1,7 +1,5 @@
-/* General styling */
 body {
     font-family: Serif;
-    background:url("assets/");
     background-position: center;
     background-size: 100% 100%;
     display: flex;
@@ -40,13 +38,13 @@ body {
     font-size: 19px;
   }
 
-  input[type="text"],input[type="date"], input[type="email"], input[type="number"]{
+ input[type="text"],input[type="date"], input[type="email"], input[type="number"]{
     width: 100%;
-    padding: 10px;
-    margin: 8px 0;
+    padding: 9px;
+    margin: 7px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   button {
