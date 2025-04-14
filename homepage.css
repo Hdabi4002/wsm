@@ -55,15 +55,15 @@ section {
 
 /* ===== Parallax Section Text ===== */
 .parallax-text {
-  max-width: 960px;
+  max-width: 900px;
   margin: auto;
-  padding: 20px;
+  padding: 18px;
 }
 
 .parallax-text img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* ===== Tips & Precautions Section ===== */
@@ -81,7 +81,7 @@ section {
 }
 
 #tipsandprecaution p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #tipsandprecaution div p img {
