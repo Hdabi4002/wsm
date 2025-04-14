@@ -10,7 +10,7 @@ body {
     margin: 0;
   }
 
-   .login-container {
+  .login-container {
     border:solid #ad0000 2px;
     background-color: white;
     padding: 35px;
@@ -21,6 +21,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+  
   @media only screen and (max-width: 480px){
     .login-container{
       width: 150px;
@@ -30,7 +31,9 @@ body {
   }
 
   h2{
+    margin-top: 2px;
     text-align: center;
+    font-size: 25px;
   }
 
   label{
@@ -38,23 +41,24 @@ body {
     font-size: 19px;
   }
 
- input[type="text"],input[type="date"], input[type="email"], input[type="number"]{
+  input[type="text"],input[type="date"], input[type="email"], input[type="tel"]{
     width: 100%;
     padding: 9px;
-    margin: 7px 0;
+    margin: 3px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 15px;
   }
-  
+ 
   button {
     width:fit-content;
-    padding: 12px;
+    margin-top: 4px;
+    padding: 10px;
     background-color: #4e4e4e;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 19px;
+    font-size: 17px;
     cursor: pointer;
   }
   
